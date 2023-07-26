@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REAL-TIME HUMAN EMOTION DETECTOR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #ffffff; /* White color for the heading */
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            color: #b3e0ff; /* Light blue color for the paragraph */
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>REAL TIME HUMAN EMOTION DETECTOR</h1>
+    <p>This tool can predict human emotion through your webcam</p>
+    <form action="/webcam" method="get">
+        <button type="submit">DETECT</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YOLOv8 Object Detection Web App</title>
+    <style>
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        section.container {
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 35px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 1fr auto; /* Two rows, the first one takes remaining height, the second one auto adjusts to content */
+            align-items: center; /* Vertically center items */
+            justify-content: center; /* Horizontally center items */
+        }
+
+        .info-box {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Real-Time Human Emotion Detection</h1>
+    </header>
+
+    <section class="container">
+        <div style="width: 640px; height: 480px; position: relative;">
+            <img src="{{ url_for('video_feed') }}" alt="Upload video" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        </div>
+        <div class="info-box">
+            Output Video
+        </div>
+    </section>
+
+
+
+</body>
+</html>
